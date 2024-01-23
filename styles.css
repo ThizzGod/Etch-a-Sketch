@@ -1,0 +1,13 @@
+#page div {
+    border: 1px solid black;
+    flex: 1 1 auto;
+    min-width: 10%;
+}
+
+#page {
+    height: 700px;
+    width: 700px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
