@@ -2,9 +2,18 @@
 let page = document.querySelector("#page");
 
 let blockNumber = function () {
-    let no = prompt("How many blocks per row?")
-    return no
+    let number = prompt("How many blocks per row?")
+    
+    for (i = 0; i < number**2; i++) {
+        let i = document.createElement("div");
+        page.appendChild(i);
+        i.addEventListener("mouseenter", () => {
+            i.classList.add("bg-color")
+        })
+    
+    }
 }
+
 
 let btn = document.querySelector("#changeBlockNumber")
 
