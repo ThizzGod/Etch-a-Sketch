@@ -3,15 +3,10 @@ let page = document.querySelector("#page");
 
 let blockNumber = function () {
     let number = prompt("How many blocks per row?");
-    if (number < 19) {
-        let x = (100 / (+number + 1)) + "%"
-    } else {
-        let x = (100 / +number) + "%"
-    }
     for (i = 0; i < number**2; i++) {
         let i = document.createElement("div");
         page.appendChild(i);
-        //let width = document.querySelector("#page div");
+        let x = (100 / (+number)) + "%"
         i.style.minWidth = x
         console.log(x)
         i.addEventListener("mouseenter", () => {
