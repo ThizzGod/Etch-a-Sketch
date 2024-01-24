@@ -1,7 +1,6 @@
 #page div {
     border: 1px solid black;
     flex: 1 1 auto;
-    min-width: 10%;
 }
 
 #page {
