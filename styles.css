@@ -11,3 +11,7 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.bg-color {
+    background-color: yellow;
+}
