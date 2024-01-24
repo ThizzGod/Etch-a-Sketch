@@ -26,20 +26,5 @@ btn.addEventListener("click", () => {
     page.innerHTML = '';
     blockNumber();
 })
-//btn.addEventListener("mouseup", blockNumber)
-
-/* for (i = 0; i < 9**2; i++) {
-    let i = document.createElement("div");
-    page.appendChild(i);
-    i.addEventListener("mouseenter", () => {
-        i.classList.add("bg-color")
-    })
-
-} */
-
-
-
-//use blocknumber to find min-width percent to fit that many blocks in one row
-//formula is (blockNumber + 1) * x == 100 round down to two decimal places
 
 
