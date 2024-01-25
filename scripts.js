@@ -2,29 +2,20 @@
 let page = document.querySelector("#page");
 
 let blockNumber = function () {
-    let number = prompt("How many blocks per row?");
-    for (i = 0; i < number**2; i++) {
-        if (number > 100) {
-            alert("Please choose a number less than 100");
-            break
-        }
+    for (i = 0; i < 25**2; i++) {
         let i = document.createElement("div");
         page.appendChild(i);
-        let x = (100 / (+number)) + "%"
+        let x = (100 / 25) + "%"
         i.style.minWidth = x
         console.log(x)
+        i.classList.add("bg-color")
         i.addEventListener("mouseenter", () => {
-            i.classList.add("bg-color")
+            i.classList.remove("bg-color")
         })
     }
 }
 
+blockNumber()
 
-let btn = document.querySelector("#changeBlockNumber")
-
-btn.addEventListener("click", () => {
-    page.innerHTML = '';
-    blockNumber();
-})
 
 
