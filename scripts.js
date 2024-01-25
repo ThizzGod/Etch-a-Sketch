@@ -9,7 +9,7 @@ let blockNumber = function () {
         i.style.minWidth = x
         console.log(x)
         i.classList.add("bg-color")
-        i.addEventListener("mouseenter", () => {
+        i.addEventListener("mousedown", () => {
             i.classList.remove("bg-color")
         })
     }
